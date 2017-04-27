@@ -14,10 +14,15 @@ class CenterController extends AdminController
     public function index()
     {
         //查询数据
-        $list = M('Center')->where('id'>0)->select();
+        $Center = M('Center');
+        $count = $Center->where('id'>0)->count();
+        $Page =new \Think\Page($count,2);
+        $show = $Page->show();
+        $list = $Center->where('status=1')->limit($Page->firstRow.','.$Page->listRows)->select();
         int_to_string($list,['status'=>[0=>'完成',1=>'未处理',2=>'处理中',3=>'处理完成']]);
         //分配数据
         $this->assign('list',$list);
+        $this->assign('page',$show);
         $this->display();
     }
 

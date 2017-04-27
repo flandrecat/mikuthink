@@ -1,0 +1,22 @@
+<extend name="Base/base"/>
+<body>
+<div class="main">
+    <block name="content">
+        <div class="container-fluid">
+            <volist name="articles" id="inform">
+            <div class="row noticeList">
+                <a href="{:U('Index/informC?id='.$inform['id'])}">
+                    <div class="col-xs-2">
+                        <img class="noticeImg" src="{$inform.path}" />
+                    </div>
+                    <div class="col-xs-10">
+                        <p class="title">{$inform.title}</p>
+                        <p class="intro">{$inform.description}</p>
+                        <p class="info">{$inform.view}<span class="pull-right">{$inform.create_time|date="Y-m-d",###}</span> </p>
+                    </div>
+                </a>
+            </div>
+            </volist>
+        </div>
+    </block>
+</div>

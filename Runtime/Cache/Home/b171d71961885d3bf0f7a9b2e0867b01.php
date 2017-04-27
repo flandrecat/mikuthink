@@ -31,20 +31,20 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="<?php echo U('index/index');?>">OneThink</a>
+            <a class="brand" href="<?php echo U('index/index');?>">用户登录</a>
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div class="nav-collapse collapse">
+            <!--<div class="nav-collapse collapse">
                 <ul class="nav">
                     <?php $__NAV__ = M('Channel')->field(true)->where("status=1")->order("sort")->select(); if(is_array($__NAV__)): $i = 0; $__LIST__ = $__NAV__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i; if(($nav["pid"]) == "0"): ?><li>
                             <a href="<?php echo (get_nav_url($nav["url"])); ?>" target="<?php if(($nav["target"]) == "1"): ?>_blank<?php else: ?>_self<?php endif; ?>"><?php echo ($nav["title"]); ?></a>
                         </li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
                 </ul>
-            </div>
-            <div class="nav-collapse collapse pull-right">
+            </div>-->
+           <!-- <div class="nav-collapse collapse pull-right">
                 <?php if(is_login()): ?><ul class="nav" style="margin-right:0">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-left:0;padding-right:0"><?php echo get_username();?> <b class="caret"></b></a>
@@ -63,7 +63,7 @@
                             <a href="<?php echo U('User/register');?>" style="padding-left:0;padding-right:0">注册</a>
                         </li>
                     </ul><?php endif; ?>
-            </div>
+            </div>-->
         </div>
     </div>
 </div>
@@ -72,12 +72,12 @@
 	
 	<!-- 主体 -->
 	
-<header class="jumbotron subhead" id="overview">
+<!--<header class="jumbotron subhead" id="overview">
   <div class="container">
     <h2>用户登录</h2>
     <p><span><span class="pull-left"><span>还没有账号? <a href="<?php echo U('User/register');?>">立即注册</a></span> </span></p>
   </div>
-</header>
+</header>-->
 
 <div id="main-container" class="container">
     <div class="row">
@@ -85,7 +85,7 @@
         
 <section>
 	<div class="span12">
-        <form class="login-form" action="/index.php?s=/Home/User/login.html" method="post">
+        <form class="login-form" action="/Home/User/login.html" method="post">
           <div class="control-group">
             <label class="control-label" for="inputEmail">用户名</label>
             <div class="controls">
@@ -139,17 +139,17 @@
 	
     <!-- 底部
     ================================================== -->
-    <footer class="footer">
+<!--    <footer class="footer">
       <div class="container">
           <p> 本站由 <strong><a href="http://www.onethink.cn" target="_blank">OneThink</a></strong> 强力驱动</p>
       </div>
-    </footer>
+    </footer>-->
 
 <script type="text/javascript">
 (function(){
 	var ThinkPHP = window.Think = {
 		"ROOT"   : "", //当前网站地址
-		"APP"    : "/index.php?s=", //当前项目地址
+		"APP"    : "", //当前项目地址
 		"PUBLIC" : "/Public", //项目公共目录地址
 		"DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
 		"MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],

@@ -130,6 +130,9 @@
                 <td colspan="6" class="text-center"> aOh! 暂时还没有内容! </td><?php endif; ?>
             </tbody>
         </table>
+        <div class="page">
+            <?php echo ($page); ?>
+        </div>
     </div>
 
         </div>
