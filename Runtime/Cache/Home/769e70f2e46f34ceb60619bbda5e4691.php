@@ -34,13 +34,13 @@
                 <p class="navbar-text"><a href="<?php echo U('Index/index');?>" class="navbar-link">首页</a></p>
             </div>
             <div class="col-xs-3">
-                <p class="navbar-text"><a href="fuwu.html" class="navbar-link">服务</a></p>
+                <p class="navbar-text"><a href="<?php echo U('User/server');?>" class="navbar-link">服务</a></p>
             </div>
             <div class="col-xs-3">
                 <p class="navbar-text"><a href="faxian.html" class="navbar-link">发现</a></p>
             </div>
             <div class="col-xs-3">
-                <p class="navbar-text"><a href="<?php echo U('User/login');?>" class="navbar-link">我的</a></p>
+                <p class="navbar-text"><a href="<?php echo U('User/my');?>" class="navbar-link">我的</a></p>
             </div>
         </div>
     </nav>
@@ -79,7 +79,7 @@
                             </a>
                         </div>
                         <div class="col-xs-4">
-                            <a href="<?php echo U('Index/shop');?>">
+                            <a href="notice.html">
                                 <div class="indexLabel label-success">
                                     <span class="glyphicon glyphicon-briefcase"></span><br/>
                                     商家活动
@@ -95,7 +95,7 @@
                             </a>
                         </div>
                         <div class="col-xs-4">
-                            <a href="<?php echo U('Index/action');?>">
+                            <a href="notice.html">
                                 <div class="indexLabel label-default">
                                     <span class="glyphicon glyphicon-apple"></span><br/>
                                     小区活动

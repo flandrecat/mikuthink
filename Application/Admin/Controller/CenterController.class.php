@@ -45,7 +45,7 @@ class CenterController extends AdminController
             }else{
                 $this->error($Center->getError());
             }
-        }else{}
+        }
         $this->display();
     }
 

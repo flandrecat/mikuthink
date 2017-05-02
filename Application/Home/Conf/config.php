@@ -130,7 +130,7 @@ return array(
          */
         'oauth' => [
             'scopes'   => ['snsapi_base'],
-            'callback' => '/miku_shop//frontend/web/wechat/callback',
+            'callback' => 'mikuthink/Home/wechat/callback',
         ],
         /**
          * 微信支付

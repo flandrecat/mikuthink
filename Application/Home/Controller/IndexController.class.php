@@ -35,7 +35,7 @@ class IndexController extends HomeController {
 
     public function online(){
         //判断是否登录
-        if($this->login()){
+        if(is_login()){
             //判断接收方式
             if(IS_POST){
                 //实例化模型
@@ -53,9 +53,14 @@ class IndexController extends HomeController {
                 }else{
                     $this->error($Center->getError());
                 }
+            }else{
+                $this->display();
             }
+        }else{
+            session('call_back','Index/online');
+            $this->redirect('User/login');
         }
-        $this->display();
+
     }
 
     //小区通知
