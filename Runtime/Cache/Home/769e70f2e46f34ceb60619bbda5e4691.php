@@ -79,7 +79,7 @@
                             </a>
                         </div>
                         <div class="col-xs-4">
-                            <a href="notice.html">
+                            <a href="<?php echo U('Index/shop');?>">
                                 <div class="indexLabel label-success">
                                     <span class="glyphicon glyphicon-briefcase"></span><br/>
                                     商家活动
@@ -95,7 +95,7 @@
                             </a>
                         </div>
                         <div class="col-xs-4">
-                            <a href="notice.html">
+                            <a href="<?php echo U('Index/action');?>">
                                 <div class="indexLabel label-default">
                                     <span class="glyphicon glyphicon-apple"></span><br/>
                                     小区活动
@@ -113,6 +113,9 @@
     <script src="/Public/static/jquery-1.11.2.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/Public/static/bootstrap/js/bootstrap.min.js"></script>
+
+
+
 
 </body>
 </html>

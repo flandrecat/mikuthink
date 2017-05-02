@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <volist name="list" id="inform">
             <div class="row noticeList">
-                <a href="{:U('Index/informC?id='.$inform['id'])}">
+                <a href="{:U('Index/actionC?id='.$inform['id'])}">
                     <div class="col-xs-2">
                         <img class="noticeImg" src="{:get_cover($inform['cover_id'],'path')}" />
                     </div>

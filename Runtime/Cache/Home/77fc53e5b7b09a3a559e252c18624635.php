@@ -49,7 +49,7 @@
     
         <div class="container-fluid">
             <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$inform): $mod = ($i % 2 );++$i;?><div class="row noticeList">
-                <a href="<?php echo U('Index/informC?id='.$inform['id']);?>">
+                <a href="<?php echo U('Index/shopC?id='.$inform['id']);?>">
                     <div class="col-xs-2">
                         <img class="noticeImg" src="<?php echo get_cover($inform['cover_id'],'path');?>" />
                     </div>
